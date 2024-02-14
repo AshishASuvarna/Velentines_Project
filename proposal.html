@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    
+    
+    <link href="style1.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container1">
+    <div class="container">
+        <div class="envelope-wrapper flap">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>My Love<img src="./images/heart.png" height="10"/></strong>
+                        <p>As the stars illuminate the night sky, so does your presence light up my life. 
+                           With each heartbeat, I find the melody of our connection. Will you be my Valentine, 
+                           and let our love story continue to blossom under the canvas of endless possibilities?</p>
+                    </div>
+                </div>              
+            </div>
+            <div class="heart"></div>
+        </div>   
+    </div>
+    
+</div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
